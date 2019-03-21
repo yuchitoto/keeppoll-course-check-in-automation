@@ -1,2 +1,2 @@
 # keeppoll-course-check-in-automation
-A repository storing programmes for my codes written for CUHK courses
+An automation for checking in to courses on KEEPoll for Windows users.
