@@ -7,6 +7,9 @@
 
 using namespace std;
 
+/**
+Find the course code csv file according to current time from the machine
+*/
 int finden(ifstream &csv)
 {
     time_t rawtime;
@@ -33,6 +36,9 @@ int finden(ifstream &csv)
     return atoi(tmp);
 }
 
+/**
+Get the session number and open the batch for automation.
+*/
 int main()
 {
     ifstream tt;
