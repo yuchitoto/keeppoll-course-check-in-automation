@@ -42,7 +42,7 @@ Get the session number and open the batch for automation.
 int main()
 {
     ifstream tt;
-    tt.open("D:\\C++\\keeppoll\\timetable.csv",fstream::in);
+    tt.open("timetable.csv",fstream::in);
     int course, ses;
     cout << "Enter session:";
     cin >> ses;
