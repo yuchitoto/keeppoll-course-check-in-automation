@@ -29,7 +29,7 @@ int finden(ifstream &csv)
         ses-=8;
     char *tmp;
     tmp=strtok(ln,",;");
-    for(int c=0;c<ses;c++)
+    for(int c=1;c<ses;c++)
     {
         tmp=strtok(NULL,",;");
     }
