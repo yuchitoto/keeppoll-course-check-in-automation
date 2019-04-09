@@ -7,7 +7,7 @@ e.g. 731 in https://poll.keep.edu.hk/a/731/1234
 All files must be put in the same directory.
 
 timetable.csv
-|            |                    |
+| Format     | Data               |
 |------------|--------------------|
 | **Row**    | Sun to Sat         |
 | **Column** | Time: 0830 to 1730 |
