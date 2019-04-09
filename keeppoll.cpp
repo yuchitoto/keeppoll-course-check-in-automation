@@ -5,6 +5,17 @@
 #include <string>
 #include <cstring>
 
+#ifdef _WIN32
+ostype 1
+#elif __linux__
+ostype 2
+#elif __APPLE__
+ostype 3
+#else
+ostype 0
+#endif
+
+
 using namespace std;
 
 /**
@@ -47,7 +58,14 @@ int main()
     cout << "Enter session:";
     cin >> ses;
     course = finden(tt);
+    if(ostype==1)
     string cm="keeppoll.cmd "+to_string(course)+" "+to_string(ses);
+    else if(ostype==2)
+    string cm="Linux.sh "+to_string(course)+" "+to_string(ses);
+    else if(ostype==3)
+    string cm="Mac.sh "+to_string(course)+" "+to_string(ses);
+    else
+    return -33;
     system(cm.c_str());
     tt.close();
     return 0;
